@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary: #234A9A;
+  --primary-hover: #1B3C80;
+  --accent: #0DBB87;
+
+  --success: #0D9B70;
+  --warning: #D99125;
+  --danger: #D84C59;
+  --info: #3978CE;
+}
+
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #F5F7FB;
+  --surface: #FFFFFF;
+  --surface-raised: #FFFFFF;
+  --sidebar: #10233F;
+  --sidebar-hover: #1A3558;
+
+  --text: #172338;
+  --muted: #64748B;
+  --border: #E5EAF1;
+  --hover: #EDF3FF;
+
+  --input-bg: #FFFFFF;
+  --shadow: 0 4px 18px rgba(16, 35, 63, 0.05);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --primary: #4169C9;
+  --primary-hover: #5279D7;
+  --accent: #32D6A0;
+
+  --bg: #0B1220;
+  --surface: #111C2E;
+  --surface-raised: #17243A;
+  --sidebar: #081426;
+  --sidebar-hover: #172B47;
+
+  --text: #E8EEF8;
+  --muted: #9AAAC0;
+  --border: #26364D;
+  --hover: #1B2B45;
+
+  --input-bg: #0D192B;
+  --shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--input-bg);
+  color: var(--text);
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(35, 74, 154, 0.12);
+}
+
+textarea {
+  resize: vertical;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Manrope', sans-serif;
+}
+
+::selection {
+  background: rgba(35, 74, 154, 0.2);
+}

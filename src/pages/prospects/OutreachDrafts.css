@@ -1,0 +1,474 @@
+/* =========================================
+   AI OUTREACH DRAFTS
+========================================= */
+
+.outreach-draft-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.outreach-draft-heading,
+.outreach-draft-subheading,
+.outreach-draft-list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.outreach-draft-eyebrow {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: var(--primary);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.outreach-draft-heading h3,
+.outreach-draft-subheading h4,
+.outreach-draft-list-heading h4 {
+  margin: 0 0 5px;
+  color: var(--text);
+}
+
+.outreach-draft-heading h3 {
+  font-size: 17px;
+}
+
+.outreach-draft-subheading h4,
+.outreach-draft-list-heading h4 {
+  font-size: 14px;
+}
+
+.outreach-draft-heading p,
+.outreach-draft-subheading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Generator */
+
+.outreach-draft-generator {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.outreach-draft-generation-form {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.8fr) minmax(180px, 1fr) minmax(200px, 1.2fr) auto;
+  gap: 13px;
+  align-items: end;
+}
+
+.outreach-draft-generation-form > div,
+.outreach-draft-edit-form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.outreach-draft-generation-form label,
+.outreach-draft-edit-form label {
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.outreach-draft-generation-form select,
+.outreach-draft-edit-form input,
+.outreach-draft-edit-form textarea,
+.outreach-draft-status-control select {
+  width: 100%;
+  min-height: 40px;
+  padding: 9px 11px;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  outline: none;
+  font: inherit;
+  font-size: 12px;
+}
+
+.outreach-draft-generation-form select:focus,
+.outreach-draft-edit-form input:focus,
+.outreach-draft-edit-form textarea:focus,
+.outreach-draft-status-control select:focus {
+  border-color: var(--primary);
+}
+
+.outreach-draft-generation-form small,
+.outreach-draft-edit-form small {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.outreach-draft-generation-form button {
+  min-height: 40px;
+  white-space: nowrap;
+}
+
+.outreach-draft-form-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* Saved drafts heading */
+
+.outreach-draft-list-heading {
+  padding-top: 3px;
+}
+
+.outreach-draft-list-heading > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.outreach-draft-list-heading h4 {
+  margin: 0;
+}
+
+.outreach-draft-list-heading span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+/* Empty state */
+
+.outreach-draft-empty {
+  padding: 27px 20px;
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+  text-align: center;
+}
+
+.outreach-draft-empty-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  margin: 0 auto 12px;
+  border-radius: 11px;
+  color: var(--primary);
+  background: rgba(35, 74, 154, 0.1);
+  font-size: 22px;
+}
+
+.outreach-draft-empty h4 {
+  margin: 0 0 7px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.outreach-draft-empty p {
+  max-width: 510px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+/* Draft cards */
+
+.outreach-draft-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.outreach-draft-card {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.outreach-draft-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.outreach-draft-card-title {
+  min-width: 0;
+}
+
+.outreach-draft-id {
+  color: var(--primary);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.outreach-draft-card-title h4 {
+  margin: 7px 0 9px;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.outreach-draft-recipient {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--muted);
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+
+.outreach-draft-recipient a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.outreach-draft-recipient a:hover {
+  text-decoration: underline;
+}
+
+.outreach-draft-status-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 175px;
+  flex-shrink: 0;
+}
+
+.outreach-draft-status-control label {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 650;
+}
+
+.outreach-draft-status-control select {
+  min-height: 36px;
+  padding: 7px 9px;
+}
+
+.outreach-draft-status-control select:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Email content */
+
+.outreach-draft-email {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--bg);
+}
+
+.outreach-draft-email-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.outreach-draft-email-heading strong {
+  color: var(--text);
+  font-size: 12px;
+}
+
+.outreach-draft-email-heading span {
+  color: var(--primary);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.outreach-draft-email p {
+  margin: 0;
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* Metadata */
+
+.outreach-draft-metadata {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.outreach-draft-metadata > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+}
+
+.outreach-draft-metadata span {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.outreach-draft-metadata strong {
+  color: var(--text);
+  font-size: 11px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+/* Edit form */
+
+.outreach-draft-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 15px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--bg);
+}
+
+.outreach-draft-edit-form textarea {
+  min-height: 180px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.outreach-draft-edit-form input {
+  font-weight: 600;
+}
+
+/* Actions */
+
+.outreach-draft-actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.outreach-draft-actions .secondary-button {
+  min-height: 36px;
+}
+
+.outreach-draft-delete-button {
+  min-height: 36px;
+  padding: 8px 12px;
+  border: 1px solid rgba(190, 67, 67, 0.25);
+  border-radius: 7px;
+  color: #B34A44;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.outreach-draft-delete-button:hover {
+  background: rgba(190, 67, 67, 0.08);
+}
+
+.outreach-draft-delete-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* Disclaimer */
+
+.outreach-draft-disclaimer {
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  background: var(--bg);
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+/* Responsive */
+
+@media (max-width: 1050px) {
+  .outreach-draft-generation-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .outreach-draft-generation-form button {
+    min-height: 40px;
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .outreach-draft-heading,
+  .outreach-draft-card-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .outreach-draft-heading > button {
+    width: 100%;
+  }
+
+  .outreach-draft-generation-form {
+    grid-template-columns: 1fr;
+  }
+
+  .outreach-draft-generation-form button {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .outreach-draft-status-control {
+    width: 100%;
+  }
+
+  .outreach-draft-metadata {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .outreach-draft-email-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .outreach-draft-actions > button {
+    flex: 1;
+  }
+}
+
+@media (max-width: 420px) {
+  .outreach-draft-metadata {
+    grid-template-columns: 1fr;
+  }
+
+  .outreach-draft-card,
+  .outreach-draft-generator {
+    padding: 13px;
+  }
+}
